@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    color: #3A4152;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #3A4152;
+    font-size: 1em;
+}
+.btn-orcamento {
+    background-color: #3A4152;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-orcamento:hover {
+    background-color: #6b6f79;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: #3A4152;
+    margin: 5px;
+}
+main{
+    width: 98%;
+    max-width: 1900px;
+    padding: 10px;
+    margin: auto;
+
+}
+.agencia{
+    color:#3A4152 ;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    
+}
+.agencia > h2{
+    font-size: 1em;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+    background-color: #bfc3cc7a;
+    border-radius: 15px;
+    
+}
+.inicio > h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 600;
+    color: #3A4152;
+    margin-top: 50px;
+}
+.inicio> p{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.botao{
+    background-color: #3A4152;
+    padding:15px;
+    color: #e0e2e6cb;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.botao-a{
+    background-color: #c6c9d17e;
+    color: #3A4152;
+    padding: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(22, 21, 21, 0.075);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.imagem{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.imagem-a{
+    background:url(imagem/office-1834294_1280.jpg) no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 350px;
+    border-radius: 10px;
+}
+.servico{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+}
+.servico-1{
+    color: #3A4152;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.servico-a{
+    width: 1200px;
+    height: 200px;
+
+}
+.servico-2{
+    color: #3A4152;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.servico-3{
+    color: #3A4152;
+    font-size: 1.1em;
+}
+.container-a{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 100px;
+    
+    
+}
+.item{
+    background-color: #e8e9ee;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.item > h2{
+    color: #3A4152;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.item > p{
+    color: #3A4152;
+    padding: 0px 0px 0px 20px;
+    margin-top: 20px;
+}
+.material-icons{
+    
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container-b{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.item-b{
+    background-color: #d1d5dd;
+    border: 1px solid rgb(177, 169, 169);
+    border-radius: 10px;
+    width: 550px;
+    height: 550px;
+    margin: 10px;
+}
+footer{
+    color: white;
+    font-size: 0.8em;
+    background-color: #3A4152;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #6b6f79;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
