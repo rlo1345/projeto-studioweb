@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projeto Agencia Studio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+
 </head>
 <body>
     <header>
@@ -29,13 +33,19 @@
         <div class="agencia"><h2>Agência digital premiada</h2></div>
 
         <section class="inicio">
-            <h1>Nós construímos produtos digitais que <br> impulsionam negócios</h1>
+            <h1>Nós construímos <span class="destaque">produtos digitais </span>que <br> impulsionam negócios</h1>
             <p>Nossa equipe de designers e desenvolvedores cria experiências digitais excepcionais que oferecem <br> resultados mensuráveis ​​para nossos clientes.</p>
         </section>
 
         <section class="container-1">
-            <a href="#Iniciar um projeto" class="botao">Iniciar um projeto</a>
-            <a href="#Veja nosso trabalho" class="botao-a">Veja nosso trabalho</a>
+            <div>
+                   
+        <a href="#start-a-project" class="botao">Iniciar um projeto</a>
+        
+        <a href="#view-our-work" class="botao-1">Veja nosso trabalho</a>
+            </div>
+                </a>
+            </div>
         </section>
 
         <section class="imagem">
@@ -66,6 +76,8 @@
                 <span class="material-icons">smartphone</span>
                 <h2>Aplicativos móveis</h2>
                 <p>Aplicativos móveis intuitivos que <br> proporcionam experiências de usuário <br> perfeitas em todos os dispositivos.</p>
+
+                
             </div>
         </section>
 
@@ -99,65 +111,77 @@
         </section>
 
         <section class="container-4">
-            <div class="item-b">
+            <div class="item-b" id="imagem">
                 <h2>Aplicação Web</h2>
                 <h1>Painel Financeiro Harmony</h1>
+           
+                
+                    <ul class="lista-botao"><li>React</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                    </ul>
+                
+
                 <div class="caixa-de-informacao">
                     <p>Uma plataforma abrangente de gestão financeira com recursos de análise e relatórios em tempo real.</p>
                 </div>
-                <ul class="lista-botao"><li>React</li>
-                    <li>TypeScript</li>
-                    <li>Node.js</li>
-                </ul>
                
                 <div class="projecto"><a href="#">Visualizar projeto</a></div>
             </div>
-            <div class="item-b">
+            <div class="item-b"id="imagem-a" >
                 <h2>Aplicativo móvel</h2>
                 <h1>Aplicativo de viagem Nomad</h1>
+            
+                <div>
+                    <ul class="lista-botao" ><li>React Native</li>
+                        <li>Firebase</li>
+                        <li>UI/UX</li>
+                    </ul>
+                </div>
                 <div class="caixa-de-informacao">
                     <p>Um aplicativo de viagem personalizado que ajuda os usuários a descobrir e planejar suas aventuras.</p>
                 </div>
-                <ul class="lista-botao" ><li>React Native</li>
-                    <li>Firebase</li>
-                    <li>UI/UX</li>
-                </ul>
                 
                 <div class="projecto"><a href="#">Visualizar projeto</a></div>
             </div>
-        </section>
 
-        <section class="container-4a">
-            <div class="item-b">
+            <div class="item-b"id="imagem-b" >
                 <h2>
                     Desenvolvimento Web</h2>
                 <h1>E-commerce Espectro</h1>
+       
+                <div>
+                    <ul class="lista-botao"><li>Next.js</li>
+                        <li>Tailwind</li>
+                        <li>Stripe</li>
+                    </ul>
+                </div>
                 <div class="caixa-de-informacao" >
                     <p>Uma plataforma de comércio eletrônico de alto desempenho com filtragem avançada de produtos e processamento de pagamentos.</p>
                 </div>
-                <ul class="lista-botao"><li>Next.js</li>
-                    <li>Tailwind</li>
-                    <li>Stripe</li>
-                </ul>
                 
                 <div class="projecto" ><a href="#">Visualizar projeto</a></div>
             </div>
-                <div class="item-b">
+                <div class="item-b" id="imagem-c">
                     <h2>Aplicativo Web</h2>
                     <h1>Plataforma Pulse Health</h1>
+
+                    <div>
+                        <ul class="lista-botao">
+                            <li>Vue.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
                     <div class="caixa-de-informacao">
                         <p>Um sistema de gestão de saúde que conecta pacientes com provedores e simplifica a manutenção de registros.</p>
                     </div>
-
-                    <ul class="lista-botao">
-                        <li>Vue.js</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                    </ul>
                    
                     <div class="projecto"><a href="#">Visualizar projeto</a></div>
                 </div>
         </section>
+
+
 
         <section class="titulo">
             <div class="titulo-a">
@@ -190,11 +214,11 @@
                         <div class="número-estatístico">120+</div>
                         <div class="texto-estatístico">Projetos concluídos</div>
                     </div>
-                    <div class="stat">
+                    <div class="estatística">
                         <div class="número-estatístico">15+</div>
                         <div class="texto-estatístico">Membros da equipe</div>
                     </div>
-                    <div class="stat">
+                    <div class="estatística">
                         <div class="número-estatístico">8+</div>
                         <div class="texto-estatístico">Anos de experiência</div>
                     </div>
@@ -247,11 +271,16 @@
                 <h3>Entre em contato</h3>
                 <div class="info-icone">
                     <div class="icone">📧</div>
-                    <p>Envie-nos um e-mail<br><strong>olá@studio.com</strong></p>
+                    <p class="email-text">Envie-nos um e-mail<br>
+                        <a href="mailto:olá@studio.com" class="email-link">olá@studio.com</a>
+                    </p>
+                    
                 </div>
                 <div class="info-icone">
                     <div class="icone">📞</div>
-                    <p>Ligue para nós<br><strong>+55 (31) 98714-5421</strong></p>
+                    <p>Ligue para nós<br>
+                    <a href="tel:+553198714-5421"><strong class="celular"> (31) 98714-5421</strong></a></p>
+                    
                 </div>
                 <div class="info-icone">
                     <div class="icone">📍</div>
@@ -260,15 +289,14 @@
     
                 <h3>Siga-nos</h3>
                 <div class="social-icones">
-                    <div class="icone">🐦</div>
-                    <div class="icone">🔗</div>
-                    <div class="icone">📸</div>
-                    <div class="icone">🎨</div>
+                    <a class="face" href="https://www.facebook.com/rildolaureoliveira/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                    <a href="https://www.instagram.com/rlo1345/" target="_blank"><i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.youtube.com/@rildolaurentino" target="_blank"><i class="fab fa-youtube"></i> </a>
+                    <a href="https://br.pinterest.com/laurentino0477/" target="_blank"><i class="fab fa-pinterest"></i> </a>
+                    <a href="https://x.com/rildololiveira" target="_blank"><i class="fab fa-x-twitter"></i> </a>
                 </div>
             </div>
         </section>
-
-
 
     </main>
 
@@ -283,11 +311,18 @@
                     para nossos clientes.
                 </p>
                 <div class="social-icons">
-                    <span class="material-icons">public</span>
-                    <span class="material-icons">link</span>
-                    <span class="material-icons">photo_camera</span>
-                    <span class="material-icons">brush</span>
+                    <a class="face" href="https://www.facebook.com/rildolaureoliveira/" target="_blank"><i class="fab fa-facebook"></i> </a>
+                    <a href="https://www.instagram.com/rlo1345/" target="_blank"><i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.youtube.com/@rildolaurentino" target="_blank"><i class="fab fa-youtube"></i> </a>
+                    <a href="https://br.pinterest.com/laurentino0477/" target="_blank"><i class="fab fa-pinterest"></i> </a>
+                    <a href="https://x.com/rildololiveira" target="_blank"><i class="fab fa-x-twitter"></i> </a>
+                    <a href="https://wa.me/5531987145421?text=Olá,%20gostaria%20de%20mais%20informações." target="_blank"><i class="fab fa-whatsapp"></i></a> 
                 </div>
+                
+                <!-- <a href="https://www.facebook.com/rildolaureoliveira" target="_blank"><span class="material-icons">public</span></a>
+                    <a href="https://x.com/rildololiveira" target="_blank"><span class="material-icons">link</span></a>
+                    <a href="https://www.instagram.com/rlo1345/" target="_blank"><span class="material-icons">photo_camera</span></a>
+                    <a href="https://www.youtube.com/@rildolaurentino" target="_blank"><span class="material-icons">brush</span></a> -->
             </div>
 
             <div class="footer-links">
@@ -316,10 +351,12 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Studio. Todos os direitos reservados.</p>
+            <p>© 2025 Studio. Todos os direitos reservados. </p>
+            <p class="footer-bottom-links" >Desenvolvido Por <a href="https://wa.me/5531987145421?text=Olá,%20gostaria%20de%20mais%20informações.">Rildo Laurentino.</a></p>
             <div class="footer-bottom-links">
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Termos de Serviço</a>
+                
             </div>
         </div>
     </footer>
