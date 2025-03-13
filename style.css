@@ -121,12 +121,12 @@ main{
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
-    color: #c6c8ce; /* Cor do texto */
+    color: #c6c8ce; 
     text-decoration: none;
-    border: 2px solid #333; /* Borda escura */
+    border: 2px solid #333; 
     border-radius: 5px;
     transition: all 0.3s ease;
-    background-color: #1e293b; /* Fundo transparente */
+    background-color: #1e293b; 
 }
 .botao-1 {
     display: inline-flex;
@@ -134,43 +134,42 @@ main{
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
-    color: #0F1729; /* Cor do texto */
+    color: #0F1729; 
     text-decoration: none;
-    border: 2px solid #e0dcdcc4; /* Borda escura */
+    border: 2px solid #e0dcdcc4; 
     border-radius: 5px;
     transition: all 0.3s ease;
-    background-color: white; /* Fundo transparente */
+    background-color: white; 
 }
-        /* Efeito ao passar o mouse */
+        
         .botao:hover {
-            background-color: #3A4152; /* Fundo escuro */
-            color: #fff; /* Texto branco */
+            background-color: #3A4152; 
+            color: #fff; 
         }
-        /* Estilo da seta */
+        
         .botao::after {
-            content: "→"; /* Seta */
-            margin-left: 10px; /* Espaçamento entre o texto e a seta */
-            transition: margin-left 0.3s ease; /* Animação da seta */
+            content: "→"; 
+            margin-left: 10px; 
+            transition: margin-left 0.3s ease; 
         }
-        /* Efeito da seta ao passar o mouse */
+        
         .botao:hover::after {
-            margin-left: 15px; /* A seta se move para a direita */
+            margin-left: 15px; 
         }
 
-         /* Efeito ao passar o mouse */
          .botao-1:hover {
-            background-color:#0F1729; /* Fundo escuro */
-            color: #fff; /* Texto branco */
+            background-color:#0F1729; 
+            color: #fff; 
         }
-        /* Estilo da seta */
+        
         .botao-1::after {
-            content: "→"; /* Seta */
-            margin-left: 10px; /* Espaçamento entre o texto e a seta */
-            transition: margin-left 0.3s ease; /* Animação da seta */
+            content: "→"; 
+            margin-left: 10px; 
+            transition: margin-left 0.3s ease; 
         }
         
         .botao-1:hover::after {
-            margin-left: 15px; /* A seta se move para a direita */
+            margin-left: 15px; 
         }
 
 .imagem{
@@ -494,11 +493,6 @@ main{
     border-radius: 10px;
 }
 
-
-
-
-
-
 .container-6 {
     max-width: 1250px;
     margin: 0 auto;
@@ -707,7 +701,6 @@ p {
     color: #7D98BF;
 }
 
-/* Rodapé inferior */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -763,7 +756,6 @@ p {
     }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
