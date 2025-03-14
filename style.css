@@ -773,17 +773,17 @@ p {
     
     .content h1 {
         font-size: 28px; 
-        padding: 20px;
+        padding: 10px;
     }
     .content h2 {
         font-size: 28px;
-        padding: 20px;
+        padding: 10px;
     }
     
     .content p {
         font-size: 16px;
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 10px;
     }
     
     .recursos {
@@ -838,6 +838,11 @@ p {
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .inicio > h1{
+        font-size: 1.5em;
+    }
+
+    
 
     
 }
