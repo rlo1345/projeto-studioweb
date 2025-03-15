@@ -841,13 +841,14 @@ p {
     .inicio > h1{
         font-size: 2.2em;
         padding: 10px;
-    }
-
-    
-
-    
+    }  
 }
-
+@media (max-width: 430px) {
+    body {
+        font-size: 14px;
+        
+    }
+}
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
