@@ -104,7 +104,7 @@ main{
 .destaque{
     color:#7D98BF ;
 }
-.inicio> p{
+.inicio > p{
     text-align: center;
     font-size: 1.3em;
     margin-top: 30px;
@@ -845,8 +845,16 @@ p {
 }
 @media (max-width: 430px) {
     body {
-        font-size: 14px;
-        
+        font-size: 14px; 
+    }
+    .inicio > h1{
+        font-size: 2.2em;
+        padding: 10px;
+        text-align: left;
+    } 
+    .inicio > p{
+        text-align: left;
+        padding: 10px;
     }
 }
 @media (max-width: 768px) {
