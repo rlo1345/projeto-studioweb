@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Agencia Studio </title>
+    <title>Studio.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-
 </head>
 <body>
     <header>
-        <div class="logo">Studio.</div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> 
+        <div class="logo">
+            <h1>Studio.</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
+            <!-- Ícone do menu hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Menu de navegação -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#properties">Imóveis</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <!-- Botão de orçamento dentro do menu -->
+                <li><a href="#budget" class="budget-button">Orçamento</a></li>
             </ul>
         </nav>
-        <a href="#orcamento" class="btn-orcamento">Orçamento</a>
     </header>
     <main>
         <div class="agencia"><h2>Agência digital premiada</h2></div>
 
         <section class="inicio">
             <h1>Nós construímos <span class="destaque">produtos digitais </span>que <br> impulsionam negócios</h1>
-            
             <p>Nossa equipe de designers e desenvolvedores cria experiências digitais excepcionais que oferecem <br> resultados mensuráveis ​​para nossos clientes.</p>
         </section>
 
@@ -237,9 +240,11 @@
 
         <section class="container-6">
             <div class="formulario">
-                <h2>Contate-nos</h2>
-                <h1>Vamos construir algo incrível juntos</h1>
-                <p>Tem um projeto em mente? Gostaríamos muito de saber sobre ele. Conte-nos um pouco sobre seu projeto e entraremos em contato com você o mais breve possível.</p>
+                <div>
+                    <h2 >Contate-nos</h2>
+                    <h1 >Vamos construir algo incrível juntos</h1>
+                    <p>Tem um projeto em mente? Gostaríamos muito de saber sobre ele. Conte-nos um pouco sobre seu projeto e entraremos em contato com você o mais breve possível.</p>
+                </div>
                 
                 <form action="/enviar" method="POST">
                     <div class="grupo-de-entrada">
@@ -296,8 +301,14 @@
                     <a href="https://br.pinterest.com/laurentino0477/" target="_blank"><i class="fab fa-pinterest"></i> </a>
                     <a href="https://x.com/rildololiveira" target="_blank"><i class="fab fa-x-twitter"></i> </a>
                 </div>
+                <!--<div class="icone">🐦</div>
+                    <div class="icone">🔗</div>
+                    <div class="icone">📸</div>
+                    <div class="icone">🎨</div>-->
             </div>
         </section>
+
+
 
     </main>
 
@@ -320,6 +331,10 @@
                     <a href="https://wa.me/5531987145421?text=Olá,%20gostaria%20de%20mais%20informações." target="_blank"><i class="fab fa-whatsapp"></i></a> 
                 </div>
                 
+                <!-- <a href="https://www.facebook.com/rildolaureoliveira" target="_blank"><span class="material-icons">public</span></a>
+                    <a href="https://x.com/rildololiveira" target="_blank"><span class="material-icons">link</span></a>
+                    <a href="https://www.instagram.com/rlo1345/" target="_blank"><span class="material-icons">photo_camera</span></a>
+                    <a href="https://www.youtube.com/@rildolaurentino" target="_blank"><span class="material-icons">brush</span></a> -->
             </div>
 
             <div class="footer-links">
@@ -348,8 +363,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Studio. Todos os direitos reservados. </p>
-            <p class="footer-bottom-links" >Desenvolvido Por <a href="https://wa.me/5531987145421?text=Olá,%20gostaria%20de%20mais%20informações.">Rildo Laurentino.</a></p>
+            <p>© 2025 Studio. Todos os direitos reservados. <br>  Desenvolvido Por Rildo Laurentino.</p>
             <div class="footer-bottom-links">
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Termos de Serviço</a>
@@ -357,11 +371,28 @@
             </div>
         </div>
     </footer>
+
     <script>
-        function toggleMenu() {
-            const navUl = document.querySelector('nav ul');
-            navUl.classList.toggle('active');
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const hamburger = document.getElementById('hamburger');
+
+            const navLinks = document.getElementById('nav-links');
+
+            const navItems = document.querySelectorAll('.nav-links li a');
+
+            hamburger.addEventListener('click', function () {
+            
+                navLinks.classList.toggle('active');
+            });
+
+            // Fechar o menu ao clicar em um link
+            navItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
     </script>
 </body>
 </html>
